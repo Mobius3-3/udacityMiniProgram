@@ -1,0 +1,157 @@
+/* navigator */
+
+.navigator-list {
+  /* margin-left:10rpx; */
+  display:flex;
+  background-color: rgb(44,148,219);
+  padding-bottom: 30rpx;
+}
+
+.navigator-item{
+  /* padding-left:10rpx; */
+  display:flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  width:110rpx;
+  align-items:center;
+ 
+}
+
+.navigator-item .normal{
+  font-size: 40rpx;
+  color:rgb(255,255,255);
+  line-height: 56rpx;
+  opacity: 0.6;
+}
+
+.navigator-item .clicked{
+  font-size: 45rpx;
+  font-weight:600;
+  color:rgb(255,255,255);
+  line-height: 56rpx;
+}
+
+/* hot picture:height-450rpx */
+
+.hot {
+  position:absolute;
+  top:10%;
+  left:85%;
+  font-weight:600;
+  font-size:35rpx;
+  line-height:40rpx;
+  color:red;
+  /* background-color: rgba(255,255,255,0.4) */
+}
+
+.title {
+  margin-right:5%;
+  margin-left:5%;
+  text-align:left;
+  font-size: 35rpx;
+  line-height: 40rpx;
+  color:rgb(255,255,255);
+} 
+
+.source{ 
+  text-align:left;
+  margin-left:5%;
+  margin-top:10rpx;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color:aliceblue;
+  opacity: 0.8;
+} 
+
+.wrapper {
+  position:relative;
+  padding-top:270rpx;
+  padding-bottom:60rpx;
+}
+
+.title-wrapper {
+  padding-top:2%;
+  margin-left:2.5%;
+  margin-right:2.5%;
+  background-color:rgba(0,0,0,0.43);
+}
+.source-wrapper {
+  display:flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.firstImage-hot{
+  position: absolute;
+  left: 2.5%;
+  top: 5%;
+  width: 95%;
+  height: 90%;
+  z-index: -1;
+}
+
+/* .bgPic {
+  position:absolute;
+  left:50rpx;
+  top:50rpx;
+  width:100%;
+  height:100%;
+} */
+
+/* news list:height-220rpx */
+.list-wrapper {
+  display:flex;
+  flex-direction: column;
+}
+
+.list {
+  display:flex;
+  align-items: center;
+  justify-content: left;
+  padding-top:5%;
+  padding-bottom:5%;
+  margin-left:2.5%;
+  margin-right:2.5%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.list-title-wrapper {
+  display:flex;
+  flex-direction:column;
+  flex-basis:80%;
+} 
+
+.list-title {
+  padding-right:2.5%;
+  margin-right:5%;
+  margin-left:2.5%;
+  text-align:left;
+  font-size: 35rpx;
+  line-height: 40rpx;
+  color:rgb(0,0,0);
+}
+
+.list-source-wrapper {
+  display:flex;
+  margin-top:2%;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.list-source{ 
+  text-align:left;
+  margin-left:5%;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color:black;
+  opacity: 0.6;
+} 
+
+.firstImage{
+  flex-basis: 30%;
+  height:130rpx;
+}
+
+
+

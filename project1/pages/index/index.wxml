@@ -1,0 +1,49 @@
+<view class = 'navigator-list'>
+  <view wx:for='{{navigatorTitle}}' class = 'navigator-item'>
+  <!-- 点击事件触发将该item.id传入js,判断状态变量btnId和item.id是否相等来选取样式 -->
+    <view class = "normal {{btnId==item.id?'clicked':''}}" data-id='{{item.id}}' bindtap='titleClick'>
+    {{item.title}}
+    </view>
+  </view>
+</view>
+
+<view class = 'wrapper' bindtap = 'onTapHot'>
+  <image class="firstImage-hot" src="{{hotNews[0].firstImage}}" mode="scaleToFill">
+  </image>
+  <view class = 'hot'>
+  热门
+  </view>
+  <view class = 'title-wrapper'>
+    <view class = 'title'>
+    {{hotNews[0].title}}
+    </view>
+    <view class = 'source-wrapper'>
+      <view class = 'source'>
+      {{hotNews[0].source}}
+      </view>
+      <view class = 'source'>
+      {{hotNews[0].date}}
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class = 'list-wrapper'>
+  <view wx:for="{{newsList}}" class = 'list' data-id='{{item.id}}' bindtap='onTapNews'>
+    <view class = 'list-title-wrapper'>
+      <view class = 'list-title'>
+        {{item.title}}
+      </view>
+      <view class = 'list-source-wrapper'>
+        <view class = 'list-source'>
+        {{item.source}}
+        </view>
+        <view class = 'list-source'>
+        {{item.date}}
+        </view>
+      </view>
+    </view>
+    <image class="firstImage" src="{{item.firstImage}}" mode="scaleToFill">
+    </image>
+  </view>
+</view>

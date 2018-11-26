@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+<view class = 'title'>
+{{news[0].title}}
+</view>
+
+<view class = 'source-wrapper'>
+  <view class = 'source'>
+  {{news[0].source}}
+  </view>
+  <view class = 'source'>
+  {{news[0].date}}
+  </view>
+  <view class = 'read'>
+  阅读量：{{news[0].readCount}}
+  </view>
+</view>
+
+<view wx:for="{{content}}" class = 'content'>
+  <view wx:if="{{item.id>1 && item.type == 'p'}}" class = 'content-p'>
+  {{item.text}}
+  </view>
+  <image wx:if="{{item.id>1 && item.type == 'image'}}" src="{{item.src}}" class = 'content-i'>
+  </image>
+</view>

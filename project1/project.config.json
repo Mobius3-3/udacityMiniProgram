@@ -11,9 +11,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.2.2",
 	"appid": "wx24b5314a91a17bdf",
-	"projectname": "weather",
+	"projectname": "News",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -24,10 +24,10 @@
 			"current": -1,
 			"list": []
 		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
 		"game": {
 			"currentL": -1,
 			"list": []
@@ -35,12 +35,12 @@
 		"miniprogram": {
 			"current": 0,
 			"list": [
-				{
-					"id": -1,
-					"name": "dev stage on second page",
-					"pathName": "pages/list/list"
-				}
-			]
+          {
+            "id": -1,
+            "name": "dev stage on second page",
+            "pathName": "pages/list/list"
+          }
+        ]
 		}
 	}
 }

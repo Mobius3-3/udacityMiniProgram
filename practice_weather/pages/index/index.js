@@ -71,7 +71,9 @@ Page({
         this.setHourly(result)
         this.setToday(result)
       },
+      // 
       complete: () => {
+        // 若&&前面为假，就不会执行后面的句子
         callback && callback()  
       }
     })

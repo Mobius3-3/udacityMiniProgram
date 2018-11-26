@@ -35,14 +35,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} 
  .location-icon{
   margin-right: 10rpx;
   width: 21rpx;
   height: 30rpx;
 }
  .location-tips{
-  margin-top:10rpx;
+  margin-top:10px;
   text-align: center;
   width: 240rpx
 }
